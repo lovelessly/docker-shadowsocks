@@ -6,7 +6,7 @@ FROM ubuntu:16.04
 MAINTAINER Dariel Dato-on <oddrationale@gmail.com>
 
 RUN apt-get update && \
-    apt-get install -y python-pip libsodium18
+    apt-get install -y python-pip libsodium18 git
 RUN pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 # Configure container to run as an executable
